@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">M6_Practica1_OMC</string>
+    <string name="splash_title">Práctica 1</string>
+    <string name="splash_module">Módulo 6.</string>
+    <string name="splash_version">Ver. 0.0.1</string>
+    <string name="splash_autor">Omar Nieto Crisóstomo</string>
+    <string name="location_detail_presion">Presión:</string>
+    <string name="location_detail_humedad">Humedad:</string>
+    <string name="location_detail_tempmin">Temp. Mínima:</string>
+    <string name="location_detail_tempmax">Temp. Máxima:</string>
+    <string name="location_detail_velviento">Vel. del viento:</string>
+    <string name="location_detail_dirviento">Dir. del viento:</string>
+    <string name="location_detail_visibilidad">Visisbilidad:</string>
+    <string name="location_detail_salida_sol">Salida del sol:</string>
+    <string name="location_detail_puesta_sol">Puesta del sol:</string>
+    <string name="location_detail_latitud">Latitud:</string>
+    <string name="location_detail_longitud">Longitud:</string>
+    <string name="location_detail_sensacion">Sensación:</string>
+    <string name="activity_main_weather">Weather</string>
+    <string name="activity_main_sun">Sun</string>
+    <string name="activity_main_cloud">Cloud</string>
+    <string name="local_detail_activity_fail_conection">No se pudo establecer conexión al sitio:</string>
+    <string name="error">ERROR:</string>
+    <string name="error_localidad">ERROR: No se ha seleccionado la localidad para mostrar el estado de tiempo</string>
+
+
+</resources>
