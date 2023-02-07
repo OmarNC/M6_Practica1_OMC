@@ -14,7 +14,6 @@ import com.onc.m6_practica1_omc.model.Location
 import com.onc.m6_practica1_omc.model.LocationDetail
 import com.onc.m6_practica1_omc.util.Constants
 import com.onc.m6_practica1_omc.util.Constants.getSerializableCompat
-import com.onc.m6_practica1_omc.view.fragments.MapDetailFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -143,10 +142,11 @@ class LocationDetailActivity : AppCompatActivity() {
 
     private fun dateTimeToString(miliseconds: Long, format: String) : String
     {
-        val date = Date(miliseconds)
+        val calendario = Calendar.getInstance()
+        calendario.timeInMillis = miliseconds*1000L
         //val simpleDateFormat  = SimpleDateFormat("dd/mm/yyyy h:mm a")
         val simpleDateFormat  = SimpleDateFormat(format, Locale.getDefault())
-        return simpleDateFormat.format(date)
+        return simpleDateFormat.format(calendario.time)
     }
 
 
