@@ -18,15 +18,17 @@ class SplashScreenActivity : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Inicia la animación del título
         val miAnimation = AnimationUtils.loadAnimation(this, R.anim.splash_title_animation)
         binding.tvTitle.startAnimation(miAnimation)
+
 
         val r = getResources()
         val duration = r.getInteger(R.integer.splash_duration)+100
         //Toast.makeText(this, "Duration : ${duration.toLong()}", Toast.LENGTH_LONG).show()
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Login::class.java))
             this.finish()
         }, duration.toLong())
     }

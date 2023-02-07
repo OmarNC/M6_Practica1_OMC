@@ -1,5 +1,6 @@
 package com.onc.m6_practica1_omc.view.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import com.onc.m6_practica1_omc.model.Location
 import com.onc.m6_practica1_omc.model.LocationDetail
 import com.onc.m6_practica1_omc.util.Constants
 import com.onc.m6_practica1_omc.util.Constants.getSerializableCompat
+import com.onc.m6_practica1_omc.view.fragments.MapDetailFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -35,6 +37,8 @@ class LocationDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
+
+
     override fun onStart() {
         super.onStart()
         loadData()
@@ -45,6 +49,15 @@ class LocationDetailActivity : AppCompatActivity() {
         intent.extras?.let { bundle ->
             if (bundle.containsKey(Constants.KEY_LOCALIDAD)) {
                 localidad = bundle.getSerializableCompat(Constants.KEY_LOCALIDAD, Location::class.java)
+
+                binding.extFab.setOnClickListener {
+
+                    val intent = Intent(this, MapConainerActivity::class.java).apply {
+                        //Enviando un objeto a la actividad
+                        putExtra(Constants.KEY_LOCALIDAD, localidad)
+                    }
+                    startActivity(intent)
+                }
 
                 CoroutineScope(Dispatchers.IO).launch {
 
@@ -77,6 +90,7 @@ class LocationDetailActivity : AppCompatActivity() {
                                 Toast.LENGTH_LONG).show()
 
                             binding.pbConexion.visibility = View.GONE
+                            binding.extFab.isEnabled = false
                         }
 
                     })
@@ -121,7 +135,9 @@ class LocationDetailActivity : AppCompatActivity() {
                     .placeholder(R.drawable.circulo_naranja)
                     .into(binding.ivIcon)
 
-        }
+                binding.extFab.isEnabled = true
+
+            }
 
     }
 

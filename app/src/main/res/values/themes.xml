@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.M6_Practica1_OMC" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -11,8 +12,18 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Customize your theme here.
         <item name="android:textColorPrimary">@color/white</item>
+        -->
+
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.App.ExtendedFloatingActionButton</item>
+    </style>
+
+    <style name="ToolbarMainStyle" parent="Theme.M6_Practica1_OMC">
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--
+        <item name="android:windowTranslucentStatus">true</item>
+        -->
     </style>
 
     <style name="FullScreen" parent="Theme.M6_Practica1_OMC">
@@ -21,4 +32,22 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <style name="outlined_edit_text"  >
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
+
+    <style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="materialThemeOverlay">@style/FAV_Style</item>
+    </style>
+
+    <style name="FAV_Style" >
+        <item name="colorPrimaryContainer">@color/purple_500</item>
+        <item name="colorOnPrimaryContainer">@color/purple_700</item>
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
 </resources>

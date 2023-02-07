@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.Login"
+    android:background="@drawable/login_background">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+    <ImageView
+        android:id="@+id/ivUsuario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_persona_1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/textInputOutlinedStyle"
+        app:boxStrokeColor="@color/blue_sky"
+        app:startIconContentDescription="@string/activity_login_email"
+        app:endIconMode="clear_text"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        android:hint="@string/activity_login_email"
+        android:layout_margin="20dp" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue_night"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayPasswd"
+        style="?attr/textInputOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/blue_sky"
+        app:startIconContentDescription="@string/activity_login_passwd"
+        android:hint="@string/activity_login_passwd"
+        app:endIconMode="password_toggle"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_night"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/pbLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/activity_login_aceptar"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+
+        />
+
+        <Button
+            android:id="@+id/btnCrearUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/activity_login_crear_user"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_login_recovery_passwd"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cvLogin"/>
+
+    <Button
+        android:id="@+id/btnNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_login_new_user"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnResetPassword"
+        />
+
+
+</RelativeLayout>
+</ScrollView>
+

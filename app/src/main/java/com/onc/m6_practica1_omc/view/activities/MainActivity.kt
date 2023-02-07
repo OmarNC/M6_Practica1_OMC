@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), IRecycleViewItemLocationSelectedListen
 
     override fun onStart() {
         super.onStart()
-        loadData()
+         loadData()
     }
 
     private fun setAnimation(){

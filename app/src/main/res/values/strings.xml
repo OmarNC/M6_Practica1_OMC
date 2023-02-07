@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">M6_Practica1_OMC</string>
-    <string name="splash_title">Práctica 1</string>
+    <string name="splash_title">Práctica 2</string>
     <string name="splash_module">Módulo 6.</string>
-    <string name="splash_version">Ver. 0.0.1</string>
+    <string name="splash_version">Ver. 0.0.2</string>
     <string name="splash_autor">Omar Nieto Crisóstomo</string>
     <string name="location_detail_presion">Presión:</string>
     <string name="location_detail_humedad">Humedad:</string>
@@ -22,6 +22,46 @@
     <string name="local_detail_activity_fail_conection">No se pudo establecer conexión al sitio:</string>
     <string name="error">ERROR:</string>
     <string name="error_localidad">ERROR: No se ha seleccionado la localidad para mostrar el estado de tiempo</string>
+    <string name="activity_login_usuario">Usuario</string>
+    <string name="activity_login_email">Correo:</string>
+    <string name="activity_login_passwd">Contraseña:</string>
+    <string name="activity_login_aceptar">Login</string>
+    <string name="activity_login_recovery_passwd">¿Olvidaste tú contraseña?</string>
+    <string name="activity_login_new_user">Nuevo usuario</string>
+    <string name="activity_login_error_passwd_empty">¡Contraseña vacía!</string>
+    <string name="activity_login_error_passwd_short">Contraseña con menos de 6 caracteres!</string>
+    <string name="activity_login_error_email_empty">¡Email vacío!</string>
+    <string name="activity_login_error_email_mismatch">¡Email Incorrecto!</string>
+    <string name="activity_login_error_email_mismatch_toast">¡Inválida dirección de correo!</string>
+    <string name="activity_login_error_passwd_wrong_toast">La contraseña es invalida o el usuario no está registrado</string>
+    <string name="activity_login_error_passwd_wrong">¡La contraseña es incorrecta!</string>
+    <string name="activity_login_error_account_exists_other_credentials">Una cuenta ya existe con el mismo correo electrónico pero con diferentes credenciales. </string>
+    <string name="activity_login_error_email_already_in_use">Este correo ya se encuentra en uso con otra cuenta</string>
+    <string name="activity_login_error_user_disable">La cuenta del usuario está deshabilitada. Contacte con el administrador.</string>
+    <string name="activity_login_error_token_expired">La sesión ha expirado, favor de ingresar nuevamente.</string>
+    <string name="activity_login_error_usuario_not_found">El usuario no existe</string>
+    <string name="activity_login_error_invalid_user_token">Las credenciales ya no son válidas, favor de ingresar nuevamente</string>
+    <string name="activity_login_error_passwd_short_Toast">La contraseña debe tener por lo menos 6 caracteres.</string>
+    <string name="activity_login_error_not_network">Red no disponible o se interrumpió la conexión.</string>
+    <string name="activity_login_error_other">Error, no se pudo autenticar.</string>
+    <string name="activity_login_register_send_mail_verification">Se ha enviado un correo de verificación, favor de consultar su correo electrónico</string>
+    <string name="activity_login_register_send_mail_verification_fail">No se pudo enviar el correo de verificación</string>
+    <string name="activity_login_register_new_user_success">Usuario creado.</string>
+    <string name="activity_login_register_send_mail_recovery">Se ha enviado a su correo el enlace pare restablecer su contraseña.</string>
+    <string name="activity_login_register_send_mail_recovery_fail">No se pudo enviar el correo el enlace para restablecer su contraseña.</string>
+    <string name="activity_login_recovery_passwd_dialog_title">Restablecer contraseña</string>
+    <string name="activity_login_recovery_passwd_dialog_Message">Ingresa tu correo para enviar el mensaje para restablecer tu contraseña</string>
+    <string name="activity_login_recovery_passwd_dialog_Enviar">Enviar</string>
+    <string name="activity_login_recovery_passwd_dialog_Empty">Ingresar la dirección de correo</string>
+    <string name="activity_login_crear_user">Crear cuenta</string>
+    <string name="activity_login_new_user_login">Login</string>
+
+    <string name="map_conainer_activity_aler_title">Permiso requerido</string>
+    <string name="map_conainer_activity_aler_message">Se necesita el permiso de localización para mostrar la ubicación del sitio</string>
+    <string name="map_conainer_activity_aler_positive_button">Concedido</string>
+    <string name="map_conainer_activity_alernegative_button">Denegado</string>
+    <string name="map_conainer_activity_toast_denegate_message">El permiso a la localización se ha negado permanentemente</string>
+    <string name="activity_location_detail_fav_desc">Explorar</string>
 
 
 </resources>

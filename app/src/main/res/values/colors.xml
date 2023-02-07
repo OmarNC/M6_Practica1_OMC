@@ -15,4 +15,6 @@
     <color name="orange">#FF9800</color>
     <color name="gray_ligth">#808080</color>
     <color name="rojo_1">#F44336</color>
+    <color name="green_1">#008000</color>
+    <color name="green_2">#244027</color>
 </resources>

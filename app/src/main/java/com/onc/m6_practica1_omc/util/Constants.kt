@@ -11,6 +11,7 @@ object Constants {
     const val LOGTAG = "LOGS"
     const val KEY_LOCALIDAD = "KEY_LOCALIDAD"
 
+
     fun getRetrofit(): Retrofit{
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
